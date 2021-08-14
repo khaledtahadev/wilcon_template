@@ -1,0 +1,19 @@
+// Start Navbar
+-var classActive;
+
+nav(class='navbar navbar-expand-lg navbar-dark bg-dark navbar-custom')|
+  .container
+    button(class='navbar-toggler text-white border-0 mr-3' data-toggle='collapse' data-target='#navContent')
+      |
+      =''
+      span(class="navbar-toggler-icon")
+      span.text-white.px-2 Menu
+    div(class='collapse navbar-collapse' id='navContent')
+      div(class='navbar-nav py-4 py-lg-0')
+        each val in ['Home', 'About', 'Service', 'Project', 'Blog', 'Contact']
+          if classActive === val 
+            a(class="nav-link p-3 text-white active" href= val ==='Home' ? 'index.html' : val + '.html')= val
+          else
+            a(class="nav-link p-3 text-white" href=val ==='Home' ? 'index.html' : val + '.html')= val
+      button.btn.btn-secondary.ml-auto.py-1.text-uppercase InquerNow
+// End Navbar

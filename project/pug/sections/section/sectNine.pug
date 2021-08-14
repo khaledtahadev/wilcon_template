@@ -1,0 +1,28 @@
+-var howManyBlog;
+
+//- Section Nine
+section.nine.py-5
+  .header-section.text-center.mb-5
+    small.text-primary Our Blog
+    h3.font-weight-bold Latest Blog Updates
+  .container
+    .row
+      //- Collumn-One
+      -for(var i=1; i<= howManyBlog; i++)
+        .col-lg-4
+          .card.border-0.mb-3
+            img(src="image/image_" + i + ".jpg", alt="image" class='card-img')
+            .card-body.bg-white
+              p.bg-primary.text-uppercase.p-1
+                a.mr-3.text-white(href='#')
+                  i.fa.fa-calendar 
+                    | Sep.6,2020
+                a.mr-3.text-white(href='#')
+                  i.fa.fa-user 
+                    | Admin
+                a.mr-3.text-white(href='#')
+                  i.fa.fa-comment 
+                    | 3
+              .card-title
+                a(href='#').text-secondary.font-weight-bold.text-decoration-none Best for any industrial & business solution
+              a(href='#').btn.btn-secondary.btn-outline-secondary Read More

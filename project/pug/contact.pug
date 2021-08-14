@@ -1,0 +1,64 @@
+extends sections/main/main.pug
+
+block VaribleToChangeValue
+  -styleFileName = 'all.min.css'
+  -classActive = 'Contact'
+
+block variblePageName
+  -namePage ='Contact'
+
+
+block googleMap
+  // Google Map
+  //- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD12daFMlN8bdySp117FB5dBbDCNhST-V4&callback=initMap&libraries=&v=weekly" defer></script>
+
+
+block Content
+  include sections/section/sectTen
+
+  section.form-contact.py-5
+    .header-section.text-center
+      small.text-primary Contact Us
+      h3.h1 Message us For More Details
+      p.text-muted.mb-5 Far far away, behind the word mountains, far from the countries <br> Vokalia and Consonantia
+    .container
+      .row
+        //- Collumn One
+        .col-md-8
+          .form-box.p-5.mb-5.mb-md-0
+            form
+              .form-row
+                .form-group.col-lg-6
+                  input(type='text', class='form-control', placeholder='YourName')
+                .form-group.col-lg-6
+                  input(type='text', class='form-control', placeholder='YourEmail')
+              .form-group
+                input(type='text', class='form-control', placeholder='Subject')
+              .form-group
+                textarea.form-control(placeholder='Message')
+              input(type="submit", class='btn btn-primary',  value="Send Message")
+        //- Collumn Two
+        .col-md-4
+          .media
+            i.fa.fa-map-marker.mr-3.text-primary
+            .media-body
+              h6 Adress:
+              p.text-muted 198 West 21th Street, Suite 721 New York NY 10016
+          .media
+            i.fa.fa-phone.mr-3.text-primary
+            .media-body
+              h6 Phone:
+              p.text-muted +6231548632
+          .media
+            i.fa.fa-paper-plane.mr-3.text-primary
+            .media-body
+              h6 Email:
+              p.text-muted Info@YourDomain.com
+          .media
+            i.fa.fa-globe.mr-3.text-primary
+            .media-body
+              h6 WebSite:
+              p.text-muted yoursite.com
+        .col.mt-4
+          #map

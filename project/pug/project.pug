@@ -1,0 +1,13 @@
+extends sections/main/main.pug
+
+block VaribleToChangeValue
+  -styleFileName = 'all.min.css'
+  -classActive = 'Project'
+
+block variblePageName
+  -namePage ='Project'
+
+block Content
+  include sections/section/sectTen
+  include sections/section/sectSeven
+  include sections/section/pagination

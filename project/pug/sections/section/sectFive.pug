@@ -1,0 +1,19 @@
+-numServices;
+//- Section Five
+section.five.text-center
+  .title-section.mb-5
+    small.text-primary Our Service
+    h3 We Offer Services
+  .container
+    .row
+      - for (var i=1; i<= numServices; i++){
+          .col-lg-4
+            .box.bg-white.p-3.shadow-sm.mb-5
+              .card
+                img(class='card-img-top' src="image/services-" + i + ".jpg", alt="image")
+                .card-body.py-5
+                  i.fa.fa-anchor.fa-3x.text-primary.bg-white.border.rounded-circle.p-3.shadow-lg
+                  h3.card-title Architecture
+                  p.card-text Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                  a.btn.btn-secondary.w-50(href="#") Read More
+          - }

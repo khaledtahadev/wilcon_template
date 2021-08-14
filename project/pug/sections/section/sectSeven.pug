@@ -1,0 +1,32 @@
+-var numberProject = 6
+-var multiImage = true;
+
+
+//- Section Seven
+section.seven.py-5
+  .header-section.text-center.mb-5
+    small.text-primary.font-weight-bold Our Global Work Industries
+    h2 Lastes Project
+  .container
+    .row
+      -for(var i=1; i <= numberProject; i++){
+        //- Collumn One
+        .col-md-4
+          .card.border-0.mb-3
+            if multiImage 
+              a(class='img-section d-flex align-items-center justify-content-center text-decoration-none'
+                href="image/project-" + i + ".jpg", style="background: url(image/project-" + i + ".jpg) center no-repeat;")
+                i.fa.fa-plus.p-4.bg-primary.text-white.mb-5
+            else
+              a(class='img-section d-flex align-items-center justify-content-center text-decoration-none'
+                href='#', style='background: url(image/project-1.jpg) center no-repeat;')
+                i.fa.fa-plus.p-4.bg-primary.text-white.mb-5
+            .card-body.shadow-sm.bg-white
+              span.card-subtitle.text-primary
+                | build
+              .card-title
+                | Building A Condominium
+              .card-text
+                i.fa.fa-map-marker.mr-2.text-primary
+                | San Francisco, California, USA
+      - }

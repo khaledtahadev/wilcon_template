@@ -1,0 +1,49 @@
+block VaribleToChangeValue
+  -styleFileName = 'all.min.css'
+  -classActive = 'Home'
+
+//- In Section Ten
+block variblePageName
+  -namePage ='Home'
+
+block numberServiceBox
+  -var numServices = 3
+
+
+block VaribleprojectSection
+  -var numberProject = 6
+  -var multiImage = false;
+  
+//- In Section Nine
+block howManyBlog
+  -var howManyBlog = 6;
+
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{classActive}
+    //- For Google Map
+    block googleMap
+    //- CSS
+    include ../../style/css.pug
+  body
+    //- OverLay
+    //- include spinnerOverLay.pug
+
+    //- Header
+    include ../header/header.pug
+
+    //- Start Content
+    block Content
+
+
+
+    //- Footer
+    include footer
+
+
+    //- JS
+    include ../../script/js.pug

@@ -1,0 +1,49 @@
+extends sections/main/main.pug
+
+block VaribleToChangeValue
+  -styleFileName = 'all.min.css'
+  -classActive = 'Home'
+
+//- In Section Ten
+block variblePageName
+  -namePage ='Home'
+
+block numberServiceBox
+  -var numServices = 3
+
+
+block VaribleprojectSection
+  -var numberProject = 6
+  -var multiImage = false;
+  
+//- In Section Nine
+block howManyBlog
+  -var howManyBlog = 3;
+
+block Content
+    //- Section One
+    include sections/section/sectOne
+
+    //- Section Two
+    include sections/section/sectTwo
+
+    //- Section Three
+    include sections/section/sectThree
+
+    //- Section Foure
+    include sections/section/sectFoure
+
+    //- Section Five
+    include sections/section/sectFive
+
+    //- Section Six
+    include sections/section/sectSix
+
+    //- Section Seven
+    include sections/section/sectSeven
+
+    //- Section Eight
+    include sections/section/sectEight
+
+    //- Section Nine
+    include sections/section/sectNine

@@ -1,0 +1,54 @@
+//- Section Eight
+section.eight.mb-5
+  .row.no-gutters
+    //- Collumn One
+    .col-md-6
+      .box-one.bg-primary.text-white.p-5.h-100
+        small.font-weight-bold Read testimonials
+        h2.font-weight-bold.text-uppercase It's always a joy to hear that the work we do has positively reviews
+    //- Collumn One
+    .col-md-6
+      .box-two.bg-secondary.text-white.p-5.h-100
+        #testim-carouesl.carousel.slide.position-static(data-ride='carouesl')
+          //- carousel-inner
+          .carousel-inner.py-4
+            //- carousel-Item
+            .carousel-item.active
+              .media.align-items-end
+                img(src="image/person_1.jpg", class='rounded-circle mr-3', alt="Image", width='64', height='64')
+                .media-body
+                  p.p-color Item One Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt numquam rerum repellat cumque, explicabo pariatur excepturi officia sapiente accusamus
+                  h6 Jeff Freshman
+                  small.text-primary.font-weight-bold Guests
+            //- carousel-Item
+            .carousel-item
+              .media.align-items-end
+                img(src="image/person_2.jpg", class='rounded-circle mr-3', alt="Image", width='64', height='64')
+                .media-body
+                  p.p-color Item Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt numquam rerum repellat cumque, explicabo pariatur excepturi officia sapiente accusamus
+                  h6 Jeff Freshman
+                  small.text-primary.font-weight-bold Guests
+            //- carousel-Item
+            .carousel-item
+              .media.align-items-end
+                img(src="image/person_3.jpg", class='rounded-circle mr-3', alt="Image", width='64', height='64')
+                .media-body
+                  p.p-color Item Three Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt numquam rerum repellat cumque, explicabo pariatur excepturi officia sapiente accusamus
+                  h6 Jeff Freshman
+                  small.text-primary.font-weight-bold Guests
+            //- carousel-Item
+            .carousel-item
+              .media.align-items-end
+                img(src="image/person_4.jpg", class='rounded-circle mr-3', alt="Image", width='64', height='64')
+                .media-body
+                  p.p-color Item Foure Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt numquam rerum repellat cumque, explicabo pariatur excepturi officia sapiente accusamus
+                  h6 Jeff Freshman
+                  small.text-primary.font-weight-bold Guests
+          //- indicators
+          ol.carousel-indicators.justify-content-start
+            li(data-target='#testim-carouesl', data-slide-to='0' class='active')
+            li(data-target='#testim-carouesl', data-slide-to='1')
+            li(data-target='#testim-carouesl', data-slide-to='2')
+            li(data-target='#testim-carouesl', data-slide-to='3')
+            li(data-target='#testim-carouesl', data-slide-to='4')
+            li(data-target='#testim-carouesl', data-slide-to='5')

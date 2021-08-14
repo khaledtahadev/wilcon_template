@@ -1,0 +1,16 @@
+extends sections/main/main.pug
+
+block VaribleToChangeValue
+  -styleFileName = 'all.min.css'
+  -classActive = 'Service'
+
+block variblePageName
+  -namePage ='Service'
+
+block numberServiceBox
+  -var numServices = 6
+
+
+block Content
+  include sections/section/sectTen
+  include sections/section/sectFive
